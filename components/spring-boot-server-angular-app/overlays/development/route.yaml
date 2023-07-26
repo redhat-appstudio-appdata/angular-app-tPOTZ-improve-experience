@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: spring-boot-server-angular-app
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: spring-boot-server-angular-app
+    app.kubernetes.io/part-of: angular-app
+  name: spring-boot-server-angulavxxo
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: spring-boot-server-angular-app
+    weight: null
+status: {}
