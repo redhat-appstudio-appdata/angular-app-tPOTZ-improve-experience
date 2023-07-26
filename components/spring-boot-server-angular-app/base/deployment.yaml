@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: spring-boot-server-angular-app
     spec:
       containers:
-      - image: java-springboot-image:latest
+      - image: quay.io/redhat-user-workloads/karthik-jk-tenant/angular-app/spring-boot-server-angular-app@sha256:7c8fe154a2ebf42b7b353e628edcd3df4228a6e23f0802973056b05c2b426ad4
         name: my-java-springboot
         ports:
         - containerPort: 8081
