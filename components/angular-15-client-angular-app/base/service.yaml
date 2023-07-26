@@ -11,8 +11,8 @@ metadata:
   name: angular-15-client-angular-app
 spec:
   ports:
-  - port: 3001
-    targetPort: 3001
+  - port: 8080
+    targetPort: 8080
   selector:
     app.kubernetes.io/instance: angular-15-client-angular-app
 status:
